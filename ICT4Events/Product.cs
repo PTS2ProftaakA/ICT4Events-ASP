@@ -15,15 +15,6 @@ namespace ICT4Events
         private List<ProductExemplaar> productExemplaren;
         private ProductCat productCategorie;
 
-        public Product(int id, string merk, string serie, int typenummer, int prijs)
-        {
-            this.id = id;
-            this.merk = merk;
-            this.serie = serie;
-            this.typenummer = typenummer;
-            this.prijs = prijs;
-        }
-
         public int Id
         {
             get { return id; }
@@ -52,6 +43,15 @@ namespace ICT4Events
         {
             get { return prijs; }
             set { prijs = value; }
+        }
+
+	public Product(int id, string merk, string serie, int typenummer, int prijs)
+        {
+            this.id = id;
+            this.merk = merk;
+            this.serie = serie;
+            this.typenummer = typenummer;
+            this.prijs = prijs;
         }
 
         
