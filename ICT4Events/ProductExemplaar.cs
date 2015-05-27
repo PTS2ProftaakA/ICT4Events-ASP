@@ -12,13 +12,7 @@ namespace ICT4Events
         private int volgnummer;
         private int barcode;
 
-        public ProductExemplaar(int id, Product product, int volgnummer, int barcode)
-        {
-            this.id = id;
-            this.product = product;
-            this.volgnummer = volgnummer;
-            this.barcode = barcode;
-        }
+        
 
         public int Id
         {
@@ -42,6 +36,14 @@ namespace ICT4Events
         {
             get { return barcode; }
             set { barcode = value; }
+        }
+
+	public ProductExemplaar(int id, Product product, int volgnummer, int barcode)
+        {
+            this.id = id;
+            this.product = product;
+            this.volgnummer = volgnummer;
+            this.barcode = barcode;
         }
 
         

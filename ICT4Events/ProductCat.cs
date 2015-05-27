@@ -12,12 +12,7 @@ namespace ICT4Events
         private string naam;
         private List<Product> producten;
 
-        public ProductCat(int id, ProductCat productCat, string naam)
-        {
-            this.id = id;
-            this.productCat = productCat;
-            this.naam = naam;
-        }
+        
 
         public int Id
         {
@@ -42,7 +37,13 @@ namespace ICT4Events
             get { return producten; }
             set { producten = value; }
         }
-
+	
+	public ProductCat(int id, ProductCat productCat, string naam)
+        {
+            this.id = id;
+            this.productCat = productCat;
+            this.naam = naam;
+        }
         
 
     }

@@ -7,12 +7,15 @@ namespace ICT4Events
 {
     public class Account
     {
+        //Fields
         private int id;
         private string gebruikersnaam;
         private string email;
         private string activatiehash;
         private bool geactiveerd;
 
+        //Properties
+        #region Properties
         public int ID
         {
             get { return id; }
@@ -42,7 +45,9 @@ namespace ICT4Events
             get { return geactiveerd; }
             set { geactiveerd = value; }
         }
+        #endregion
 
+        //Constructor
         public Account(int id, string gebruikersnaam, string email, string activatiehash, bool geactiveerd)
         {
             this.id = id;

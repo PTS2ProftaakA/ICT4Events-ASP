@@ -14,15 +14,7 @@ namespace ICT4Events
         private bool betaald;
         private ProductExemplaar productExemplaar;
 
-        public Verhuur(int id, DateTime datumIn, DateTime datumUit, int prijs, bool betaald, ProductExemplaar productExemplaar)
-        {
-            this.id = id;
-            this.datumIn = datumIn;
-            this.datumUit = datumUit;
-            this.prijs = prijs;
-            this.betaald = betaald;
-            this.productExemplaar = productExemplaar;
-        }
+        
 
         public DateTime DatumIn
         {
@@ -54,6 +46,16 @@ namespace ICT4Events
         {
             get { return id; }
             set { id = value; }
+        }
+
+	public Verhuur(int id, DateTime datumIn, DateTime datumUit, int prijs, bool betaald, ProductExemplaar productExemplaar)
+        {
+            this.id = id;
+            this.datumIn = datumIn;
+            this.datumUit = datumUit;
+            this.prijs = prijs;
+            this.betaald = betaald;
+            this.productExemplaar = productExemplaar;
         }
     }
 }
