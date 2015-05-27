@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ICT4Events", "ICT4Events\ICT4Events.csproj", "{EB71159A-CD8C-474C-B836-286CB280A33A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ICT4Events", "ICT4Events\ICT4Events.csproj", "{13A93E60-650C-4EE7-935C-4772EA44021A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ICT4Events.Tests", "..\Documents\Visual Studio 2013\Projects\ICT4Events\ICT4Events.Tests\ICT4Events.Tests.csproj", "{E05305B1-4645-4744-8881-283D47E9D948}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ICT4Events.Tests", "ICT4Events.Tests\ICT4Events.Tests.csproj", "{B3EF701A-0293-4EDD-8B2E-F34E43E152CD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{EB71159A-CD8C-474C-B836-286CB280A33A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EB71159A-CD8C-474C-B836-286CB280A33A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EB71159A-CD8C-474C-B836-286CB280A33A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EB71159A-CD8C-474C-B836-286CB280A33A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E05305B1-4645-4744-8881-283D47E9D948}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E05305B1-4645-4744-8881-283D47E9D948}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E05305B1-4645-4744-8881-283D47E9D948}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E05305B1-4645-4744-8881-283D47E9D948}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13A93E60-650C-4EE7-935C-4772EA44021A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13A93E60-650C-4EE7-935C-4772EA44021A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13A93E60-650C-4EE7-935C-4772EA44021A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13A93E60-650C-4EE7-935C-4772EA44021A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3EF701A-0293-4EDD-8B2E-F34E43E152CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3EF701A-0293-4EDD-8B2E-F34E43E152CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3EF701A-0293-4EDD-8B2E-F34E43E152CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3EF701A-0293-4EDD-8B2E-F34E43E152CD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
