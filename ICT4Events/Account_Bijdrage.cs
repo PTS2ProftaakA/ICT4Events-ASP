@@ -7,12 +7,15 @@ namespace ICT4Events
 {
     public class Account_Bijdrage
     {
+        //Fields
         private int id;
         private Account account;
         private Bijdrage bijdrage;
         private bool like;
         private bool ongewenst;
 
+        //Properties
+        #region Properties
         public int ID
         {
             get { return id; }
@@ -42,7 +45,9 @@ namespace ICT4Events
             get { return ongewenst; }
             set { ongewenst = value; }
         }
+        #endregion
 
+        //Constructor
         public Account_Bijdrage(int id, Account account, Bijdrage bijdrage, bool like, bool ongewenst)
         {
             this.id = id;

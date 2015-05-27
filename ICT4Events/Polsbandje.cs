@@ -7,10 +7,13 @@ namespace ICT4Events
 {
     public class Polsbandje
     {
+        //Fields
         private int id;
         private string barcode;
         private bool actief;
 
+        //Properties
+        #region Properties
         public int ID
         {
             get { return id; }
@@ -28,7 +31,9 @@ namespace ICT4Events
             get { return actief; }
             set { actief = value; }
         }
+        #endregion
 
+        //Constructor
         public Polsbandje(int id, string barcode, bool actief)
         {
             this.id = id;
