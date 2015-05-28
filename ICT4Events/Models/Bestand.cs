@@ -3,35 +3,43 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace ICT4Events
+namespace ICT4Events.Models
 {
     public class Bestand : Bijdrage
     {
         //Fields
-        private string bestandslocatie;
-        private int grootte;
+        private Categorie _categorie;
+        private string _bestandsLocatie;
+        private int _grootte;
 
         //Properties
-        #region properties
-        public string Bestandslocatie
+        #region Properties
+        public Categorie Categorie
         {
-            get { return bestandslocatie; }
-            set { bestandslocatie = value; }
+            get { return _categorie; }
+            set { _categorie = value; }
+        }
+
+        public string BestandsLocatie
+        {
+            get { return _bestandsLocatie; }
+            set { _bestandsLocatie = value; }
         }
 
         public int Grootte
         {
-            get { return grootte; }
-            set { grootte = value; }
+            get { return _grootte; }
+            set { _grootte = value; }
         }
         #endregion
 
         //Constructor
-        public Bestand(int id, DateTime datum, BijdrageType soort, string bestandslocatie, int grootte)
-            : base(id, datum, soort)
+        public Bestand(int id, Account account, DateTime datum, BijdrageType soort, Categorie categorie, string bestandslocatie, int grootte)
+            : base(id, account, datum, soort)
         {
-            this.bestandslocatie = bestandslocatie;
-            this.grootte = grootte;
+            this._categorie = categorie;
+            this._bestandsLocatie = bestandslocatie;
+            this._grootte = grootte;
         }
     }
 }

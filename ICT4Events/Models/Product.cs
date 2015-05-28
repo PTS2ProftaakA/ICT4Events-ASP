@@ -3,62 +3,74 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace ICT4Events
+namespace ICT4Events.Models
 {
     public class Product
     {
         //Fields
-        private int id;
-        private string merk;
-        private string serie;
-        private int typenummer;
-        private int prijs;
-        private List<ProductExemplaar> productExemplaren;
-        private ProductCat productCategorie;
+        private int _id;
+        private ProductCat _productCategorie;
+        private string _merk;
+        private string _serie;
+        private int _typenummer;
+        private int _prijs;
+        private List<ProductExemplaar> _productExemplaren;
 
         //Properties
         #region Properties
-        public int Id
+        public int ID
         {
-            get { return id; }
-            set { id = value; }
+            get { return _id; }
+            set { _id = value; }
+        }
+
+        public ProductCat ProductCategorie
+        {
+            get { return _productCategorie; }
+            set { _productCategorie = value; }
         }
 
         public string Merk
         {
-            get { return merk; }
-            set { merk = value; }
+            get { return _merk; }
+            set { _merk = value; }
         }
 
         public string Serie
         {
-            get { return serie; }
-            set { serie = value; }
+            get { return _serie; }
+            set { _serie = value; }
         }
 
         public int Typenummer
         {
-            get { return typenummer; }
-            set { typenummer = value; }
+            get { return _typenummer; }
+            set { _typenummer = value; }
         }
 
         public int Prijs
         {
-            get { return prijs; }
-            set { prijs = value; }
+            get { return _prijs; }
+            set { _prijs = value; }
+        }
+
+        public List<ProductExemplaar> ProductExemplaren
+        {
+            get { return _productExemplaren; }
+            set { _productExemplaren = value; }
         }
         #endregion
 
         //Constructors
-        public Product(int id, string merk, string serie, int typenummer, int prijs)
+        public Product(int id, ProductCat productCategorie, string merk, string serie, int typenummer, int prijs, List<ProductExemplaar> productExemplaren)
         {
-            this.id = id;
-            this.merk = merk;
-            this.serie = serie;
-            this.typenummer = typenummer;
-            this.prijs = prijs;
+            this._id = id;
+            this._productCategorie = productCategorie;
+            this._merk = merk;
+            this._serie = serie;
+            this._typenummer = typenummer;
+            this._prijs = prijs;
+            this._productExemplaren = productExemplaren;
         }
-
-        
     }
 }

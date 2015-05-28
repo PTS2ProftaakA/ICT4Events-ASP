@@ -3,58 +3,66 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace ICT4Events
+namespace ICT4Events.Models
 {
     public class Reservering_Polsbandje
     {
         //Fields
-        private int id;
-        private Reservering reservering;
-        private Polsbandje polsbandje;
-        private Account account;
-        private bool aanwezig;
+        private int _id;
+        private Reservering _reservering;
+        private Polsbandje _polsbandje;
+        private Account _account;
+        private bool _aanwezig;
+        private List<Verhuur> _verhuren;
 
         //Properties
         #region Properties
         public int ID
         {
-            get { return id; }
-            set { id = value; }
+            get { return _id; }
+            set { _id = value; }
         }
 
         public Reservering Reservering
         {
-            get { return reservering; }
-            set { reservering = value; }
+            get { return _reservering; }
+            set { _reservering = value; }
         }
 
         public Polsbandje Polsbandje
         {
-            get { return polsbandje; }
-            set { polsbandje = value; }
+            get { return _polsbandje; }
+            set { _polsbandje = value; }
         }
 
         public Account Account
         {
-            get { return account; }
-            set { account = value; }
+            get { return _account; }
+            set { _account = value; }
         }
 
         public bool Aanwezig
         {
-            get { return aanwezig; }
-            set { aanwezig = value; }
+            get { return _aanwezig; }
+            set { _aanwezig = value; }
+        }
+
+        public List<Verhuur> Verhuren
+        {
+            get { return _verhuren; }
+            set { _verhuren = value; }
         }
         #endregion
 
         //Constructor
-        public Reservering_Polsbandje(int id, Reservering reservering, Polsbandje polsbandje, Account account, bool aanwezig)
+        public Reservering_Polsbandje(int id, Reservering reservering, Polsbandje polsbandje, Account account, bool aanwezig, List<Verhuur> verhuren)
         {
-            this.id = id;
-            this.reservering = reservering;
-            this.polsbandje = polsbandje;
-            this.account = account;
-            this.aanwezig = aanwezig;
+            this._id = id;
+            this._reservering = reservering;
+            this._polsbandje = polsbandje;
+            this._account = account;
+            this._aanwezig = aanwezig;
+            this._verhuren = verhuren;
         }
     }
 }

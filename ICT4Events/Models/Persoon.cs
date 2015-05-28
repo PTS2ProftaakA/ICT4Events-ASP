@@ -3,82 +3,90 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace ICT4Events
+namespace ICT4Events.Models
 {
     public class Persoon
     {
         //Fields
-        private int id;
-        private string voornaam;
-        private string tussenvoegsel;
-        private string achternaam;
-        private string straat;
-        private int huisnr;
-        private string woonplaats;
-        private string banknr;
+        private int _id;
+        private string _voornaam;
+        private string _tussenvoegsel;
+        private string _achternaam;
+        private string _straat;
+        private int _huisnr;
+        private string _woonplaats;
+        private string _banknr;
+        private List<Reservering> _reserveringen;
 
         //Properties
         #region Properties
-        public int Id
+        public int ID
         {
-            get { return id; }
-            set { id = value; }
+            get { return _id; }
+            set { _id = value; }
         }
 
         public string Tussenvoegsel
         {
-            get { return tussenvoegsel; }
-            set { tussenvoegsel = value; }
+            get { return _tussenvoegsel; }
+            set { _tussenvoegsel = value; }
         }
 
         public string Voornaam
         {
-            get { return voornaam; }
-            set { voornaam = value; }
+            get { return _voornaam; }
+            set { _voornaam = value; }
         }
 
         public string Achternaam
         {
-            get { return achternaam; }
-            set { achternaam = value; }
+            get { return _achternaam; }
+            set { _achternaam = value; }
         }
 
         public string Straat
         {
-            get { return straat; }
-            set { straat = value; }
+            get { return _straat; }
+            set { _straat = value; }
         }
 
         public int Huisnr
         {
-            get { return huisnr; }
-            set { huisnr = value; }
+            get { return _huisnr; }
+            set { _huisnr = value; }
         }
 
         public string Woonplaats
         {
-            get { return woonplaats; }
-            set { woonplaats = value; }
+            get { return _woonplaats; }
+            set { _woonplaats = value; }
         }
 
         public string Banknr
         {
-            get { return banknr; }
-            set { banknr = value; }
+            get { return _banknr; }
+            set { _banknr = value; }
+        }
+
+        public List<Reservering> Reserveringen
+        {
+            get { return _reserveringen; }
+            set { _reserveringen = value; }
         }
         #endregion
 
         //Constructor
-        public Persoon(int id, string voornaam, string tussenvoegsel, string achternaam, string straat, string woonplaats, int huisnr, string banknr)
+        public Persoon(int id, string voornaam, string tussenvoegsel, string achternaam, string straat, string woonplaats, int huisnr, string banknr, List<Reservering> reserveringen)
         {
-            this.id = id;
-            this.voornaam = voornaam;
-            this.tussenvoegsel = tussenvoegsel;
-            this.achternaam = achternaam;
-            this.straat = straat;
-            this.woonplaats = woonplaats;
-            this.huisnr = huisnr;
-            this.banknr = banknr;
+            this._id = id;
+            this._voornaam = voornaam;
+            this._tussenvoegsel = tussenvoegsel;
+            this._achternaam = achternaam;
+            this._straat = straat;
+            this._woonplaats = woonplaats;
+            this._huisnr = huisnr;
+            this._banknr = banknr;
+            this._reserveringen = reserveringen;
         }
     }
 }

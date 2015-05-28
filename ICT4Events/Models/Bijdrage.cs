@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace ICT4Events
+namespace ICT4Events.Models
 {
     public abstract class Bijdrage
     {
@@ -15,38 +15,45 @@ namespace ICT4Events
         }
 
         //Fields
-        private int id;
-        //private Account account;
-        private DateTime datum;
-        private BijdrageType soort;
+        private int _id;
+        private Account _account;
+        private DateTime _datum;
+        private BijdrageType _soort;
 
         //Properties
-        #region properties
+        #region Properties
         public int ID
         {
-            get { return id; }
-            set { id = value; }
+            get { return _id; }
+            set { _id = value; }
+        }
+
+        public Account Account
+        {
+            get { return _account; }
+            set { _account = value; }
         }
 
         public DateTime Datum
         {
-            get { return datum; }
-            set { datum = value; }
+            get { return _datum; }
+            set { _datum = value; }
         }
 
         public BijdrageType Soort
         {
-            get { return soort; }
-            set { soort = value; }
+            get { return _soort; }
+            set { _soort = value; }
         }
         #endregion
 
         //Constructor
-        public Bijdrage(int id, DateTime datum, BijdrageType soort)
+        public Bijdrage(int id, Account account, DateTime datum, BijdrageType soort)
         {
-            this.id = id;
-            this.datum = datum;
-            this.soort = soort;
+            this._id = id;
+            this._account = account;
+            this._datum = datum;
+            this._soort = soort;
         }
     }
 }

@@ -3,35 +3,35 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace ICT4Events
+namespace ICT4Events.Models
 {
     public class Bericht : Bijdrage
     {
         //Fields
-        private string titel;
-        private string inhoud;
+        private string _titel;
+        private string _inhoud;
 
         //Properties
         #region properties
         public string Titel
         {
-            get { return titel; }
-            set { titel = value; }
+            get { return _titel; }
+            set { _titel = value; }
         }
 
         public string Inhoud
         {
-            get { return inhoud; }
-            set { inhoud = value; }
+            get { return _inhoud; }
+            set { _inhoud = value; }
         }
-#endregion
+        #endregion
 
         //Constructor
-        public Bericht(int id, DateTime datum, BijdrageType soort, string titel, string inhoud)
-            : base(id, datum, soort)
+        public Bericht(int id, Account account, DateTime datum, BijdrageType soort, string titel, string inhoud)
+            : base(id, account, datum, soort)
         {
-            this.titel = titel;
-            this.inhoud = inhoud;
+            this._titel = titel;
+            this._inhoud = inhoud;
         }
     }
 }

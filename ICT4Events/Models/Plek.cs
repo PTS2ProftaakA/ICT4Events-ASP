@@ -3,42 +3,58 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace ICT4Events
+namespace ICT4Events.Models
 {
     public class Plek
     {
         //Fields
-        private int nummer;
-        private int capaciteit;
-        private List<KeyValuePair<string, string>> specificaties;
+        private Locatie _locatie;
+        private int _nummer;
+        private int _capaciteit;
+        private List<Plek_Reservering> _plekReserveringen;
+        private List<KeyValuePair<string, string>> _specificaties;
 
         //Properties
         #region Properties
+        public Locatie Locatie
+        {
+            get { return _locatie; }
+            set { _locatie = value; }
+        }
+
         public int Nummer
         {
-            get { return nummer; }
-            set { nummer = value; }
+            get { return _nummer; }
+            set { _nummer = value; }
         }
 
         public int Capaciteit
         {
-            get { return capaciteit; }
-            set { capaciteit = value; }
+            get { return _capaciteit; }
+            set { _capaciteit = value; }
+        }
+
+        public List<Plek_Reservering> PlekReserveringen
+        {
+            get { return _plekReserveringen; }
+            set { _plekReserveringen = value; }
         }
 
         public List<KeyValuePair<string, string>> Specificaties
         {
-            get { return specificaties; }
-            set { specificaties = value; }
+            get { return _specificaties; }
+            set { _specificaties = value; }
         }
         #endregion
 
         //Constructors
-        public Plek(int nummer, int capaciteit, List<KeyValuePair<string, string>> specificaties)
+        public Plek(Locatie locatie, int nummer, int capaciteit, List<Plek_Reservering> plekReserveringen, List<KeyValuePair<string, string>> specificaties)
         {
-            this.nummer = nummer;
-            this.capaciteit = capaciteit;
-            this.specificaties = specificaties;
+            this._locatie = locatie;
+            this._nummer = nummer;
+            this._capaciteit = capaciteit;
+            this._plekReserveringen = plekReserveringen;
+            this._specificaties = specificaties;
         }
     }
 }

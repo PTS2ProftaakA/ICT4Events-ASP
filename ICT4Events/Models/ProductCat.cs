@@ -3,51 +3,50 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace ICT4Events
+namespace ICT4Events.Models
 {
     public class ProductCat
     {
         //Fields
-        private int id;
-        private ProductCat productCat;
-        private string naam;
-        private List<Product> producten;
+        private int _id;
+        private ProductCat _productCat;
+        private string _naam;
+        private List<Product> _producten;
 
         //Properties
         #region Properties
-        public int Id
+        public int ID
         {
-            get { return id; }
-            set { id = value; }
+            get { return _id; }
+            set { _id = value; }
         }
 
-        public ProductCat ProductCat1
+        public ProductCat SubProductCat
         {
-            get { return productCat; }
-            set { productCat = value; }
+            get { return _productCat; }
+            set { _productCat = value; }
         }
 
         public string Naam
         {
-            get { return naam; }
-            set { naam = value; }
+            get { return _naam; }
+            set { _naam = value; }
         }
 
         public List<Product> Producten
         {
-            get { return producten; }
-            set { producten = value; }
+            get { return _producten; }
+            set { _producten = value; }
         }
         #endregion
 
         //Constructors
-        public ProductCat(int id, ProductCat productCat, string naam)
+        public ProductCat(int id, ProductCat productCat, string naam, List<Product> producten)
         {
-            this.id = id;
-            this.productCat = productCat;
-            this.naam = naam;
+            this._id = id;
+            this._productCat = productCat;
+            this._naam = naam;
+            this._producten = producten;
         }
-        
-
     }
 }

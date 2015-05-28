@@ -3,60 +3,74 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace ICT4Events
+namespace ICT4Events.Models
 {
     public class Verhuur
     {
         //Fields
-        private int id;
-        private DateTime datumIn;
-        private DateTime datumUit;
-        private int prijs;
-        private bool betaald;
-        private ProductExemplaar productExemplaar;
+        private int _id;
+        private ProductExemplaar _productExemplaar;
+        private Reservering_Polsbandje _reserveringPolsbandje;
+        private DateTime _datumIn;
+        private DateTime _datumUit;
+        private int _prijs;
+        private bool _betaald;
 
         //Properties
         #region Properties
+        public int ID
+        {
+            get { return _id; }
+            set { _id = value; }
+        }
+
+        public ProductExemplaar ProductExemplaar
+        {
+            get { return _productExemplaar; }
+            set { _productExemplaar = value; }
+        }
+
+        public Reservering_Polsbandje ReserveringPolsbandje
+        {
+            get { return _reserveringPolsbandje; }
+            set { _reserveringPolsbandje = value; }
+        }
+
         public DateTime DatumIn
         {
-            get { return datumIn; }
-            set { datumIn = value; }
+            get { return _datumIn; }
+            set { _datumIn = value; }
         }
 
         public DateTime DatumUit
         {
-            get { return datumUit; }
-            set { datumUit = value; }
+            get { return _datumUit; }
+            set { _datumUit = value; }
         }
 
         public int Prijs
         {
-            get { return prijs; }
-            set { prijs = value; }
+            get { return _prijs; }
+            set { _prijs = value; }
         }
 
         public bool Betaald
         {
-            get { return betaald; }
-            set { betaald = value; }
-        }
-
-        public int Id
-        {
-            get { return id; }
-            set { id = value; }
+            get { return _betaald; }
+            set { _betaald = value; }
         }
         #endregion
 
         //Constructors
-        public Verhuur(int id, DateTime datumIn, DateTime datumUit, int prijs, bool betaald, ProductExemplaar productExemplaar)
+        public Verhuur(int id, ProductExemplaar productExemplaar, Reservering_Polsbandje reserveringPolsbandje, DateTime datumIn, DateTime datumUit, int prijs, bool betaald)
         {
-            this.id = id;
-            this.datumIn = datumIn;
-            this.datumUit = datumUit;
-            this.prijs = prijs;
-            this.betaald = betaald;
-            this.productExemplaar = productExemplaar;
+            this._id = id;
+            this._productExemplaar = productExemplaar;
+            this._reserveringPolsbandje = reserveringPolsbandje;
+            this._datumIn = datumIn;
+            this._datumUit = datumUit;
+            this._prijs = prijs;
+            this._betaald = betaald;
         }
     }
 }
