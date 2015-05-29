@@ -5,7 +5,7 @@ using System.Web;
 
 namespace ICT4Events.Models
 {
-    public class Reservering
+    public class Reservering : Database.IDatabase<Reservering>
     {
         //Fields
         private int _id;
@@ -73,17 +73,17 @@ namespace ICT4Events.Models
             this._reserveringPolsbandjes = reserveringPolsbandjes;
         }
 
-        public void Add(Reservering reservering, Database.Database database)
+        public void Toevoegen(Reservering reservering, Database.Database database)
         {
 
         }
 
-        public void Edit(Reservering reservering, Database.Database database)
+        public void Aanpassen(Reservering reservering, Database.Database database)
         {
 
         }
 
-        public void Remove(Reservering reservering, Database.Database database)
+        public void Verwijderen(Reservering reservering, Database.Database database)
         {
 
         }

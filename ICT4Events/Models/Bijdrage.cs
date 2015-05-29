@@ -5,7 +5,7 @@ using System.Web;
 
 namespace ICT4Events.Models
 {
-    public abstract class Bijdrage
+    public abstract class Bijdrage : Database.IDatabase<Bijdrage>
     {
         public enum  BijdrageType
         {
@@ -56,17 +56,17 @@ namespace ICT4Events.Models
             this._soort = soort;
         }
 
-        public void Add(Bijdrage bijdrage, Database.Database database)
+        public void Toevoegen(Bijdrage bijdrage, Database.Database database)
         {
 
         }
 
-        public void Edit(Bijdrage bijdrage, Database.Database database)
+        public void Aanpassen(Bijdrage bijdrage, Database.Database database)
         {
 
         }
 
-        public void Remove(Bijdrage bijdrage, Database.Database database)
+        public void Verwijderen(Bijdrage bijdrage, Database.Database database)
         {
 
         }

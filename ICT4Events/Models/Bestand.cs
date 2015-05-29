@@ -41,5 +41,20 @@ namespace ICT4Events.Models
             this._bestandsLocatie = bestandslocatie;
             this._grootte = grootte;
         }
+
+        public void Add(Bestand bestand, Database.Database database)
+        {
+
+        }
+
+        public void Edit(Bestand bestand, Database.Database database)
+        {
+
+        }
+
+        public void Remove(Bestand bestand, Database.Database database)
+        {
+
+        }
     }
 }

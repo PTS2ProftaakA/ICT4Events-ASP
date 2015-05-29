@@ -5,7 +5,7 @@ using System.Web;
 
 namespace ICT4Events.Models
 {
-    public class Account_Bijdrage
+    public class Account_Bijdrage : Database.IDatabase<Account_Bijdrage>
     {
         //Fields
         private int _id;
@@ -55,6 +55,21 @@ namespace ICT4Events.Models
             this._bijdrage = bijdrage;
             this._like = like;
             this._ongewenst = ongewenst;
+        }
+
+        public void Toevoegen(Account_Bijdrage accountBijdrage, Database.Database database)
+        {
+
+        }
+
+        public void Aanpassen(Account_Bijdrage accountBijdrage, Database.Database database)
+        {
+
+        }
+
+        public void Verwijderen(Account_Bijdrage accountBijdrage, Database.Database database)
+        {
+
         }
     }
 }

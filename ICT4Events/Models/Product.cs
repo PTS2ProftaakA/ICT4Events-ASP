@@ -5,7 +5,7 @@ using System.Web;
 
 namespace ICT4Events.Models
 {
-    public class Product
+    public class Product : Database.IDatabase<Product>
     {
         //Fields
         private int _id;
@@ -73,17 +73,17 @@ namespace ICT4Events.Models
             this._productExemplaren = productExemplaren;
         }
 
-        public void Add(Product product, Database.Database database)
+        public void Toevoegen(Product product, Database.Database database)
         {
 
         }
 
-        public void Edit(Product product, Database.Database database)
+        public void Aanpassen(Product product, Database.Database database)
         {
 
         }
 
-        public void Remove(Product product, Database.Database database)
+        public void Verwijderen(Product product, Database.Database database)
         {
 
         }

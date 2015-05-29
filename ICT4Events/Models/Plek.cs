@@ -5,7 +5,7 @@ using System.Web;
 
 namespace ICT4Events.Models
 {
-    public class Plek
+    public class Plek : Database.IDatabase<Plek>
     {
         //Fields
         private Locatie _locatie;
@@ -57,17 +57,17 @@ namespace ICT4Events.Models
             this._specificaties = specificaties;
         }
 
-        public void Add(Plek plek, Database.Database database)
+        public void Toevoegen(Plek plek, Database.Database database)
         {
 
         }
 
-        public void Edit(Plek plek, Database.Database database)
+        public void Aanpassen(Plek plek, Database.Database database)
         {
 
         }
 
-        public void Remove(Plek plek, Database.Database database)
+        public void Verwijderen(Plek plek, Database.Database database)
         {
 
         }

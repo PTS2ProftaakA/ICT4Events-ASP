@@ -33,5 +33,20 @@ namespace ICT4Events.Models
             this._titel = titel;
             this._inhoud = inhoud;
         }
+
+        public void Add(Bericht bericht, Database.Database database)
+        {
+
+        }
+
+        public void Edit(Bericht bericht, Database.Database database)
+        {
+
+        }
+
+        public void Remove(Bericht bericht, Database.Database database)
+        {
+
+        }
     }
 }

@@ -57,17 +57,17 @@ namespace ICT4Events.Models
             this._geactiveerd = geactiveerd;
         }
 
-        public void Add(Account account, Database.Database database)
+        public void Toevoegen(Account account, Database.Database database)
         {
             
         }
 
-        public void Edit(Account account, Database.Database database)
+        public void Aanpassen(Account account, Database.Database database)
         {
 
         }
 
-        public void Remove(Account account, Database.Database database)
+        public void Verwijderen(Account account, Database.Database database)
         {
 
         }
