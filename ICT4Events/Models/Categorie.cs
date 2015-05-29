@@ -41,5 +41,20 @@ namespace ICT4Events.Models
             this._naam = naam;
             this._bestanden = bestanden;
         }
+
+        public void Add(Categorie categorie, Database.Database database)
+        {
+
+        }
+
+        public void Edit(Categorie categorie, Database.Database database)
+        {
+
+        }
+
+        public void Remove(Categorie categorie, Database.Database database)
+        {
+
+        }
     }
 }

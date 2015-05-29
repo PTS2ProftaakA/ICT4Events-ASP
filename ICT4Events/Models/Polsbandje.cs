@@ -48,5 +48,20 @@ namespace ICT4Events.Models
             this._actief = actief;
             this._reserveringPolsbandjes = reserveringPolsbandjes;
         }
+
+        public void Add(Polsbandje polsbandje, Database.Database database)
+        {
+
+        }
+
+        public void Edit(Polsbandje polsbandje, Database.Database database)
+        {
+
+        }
+
+        public void Remove(Polsbandje polsbandje, Database.Database database)
+        {
+
+        }
     }
 }

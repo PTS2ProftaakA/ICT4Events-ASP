@@ -56,5 +56,20 @@ namespace ICT4Events.Models
             this._barcode = barcode;
             this._verhuren = verhuren;
         }
+
+        public void Add(ProductExemplaar productExemplaar, Database.Database database)
+        {
+
+        }
+
+        public void Edit(ProductExemplaar productExemplaar, Database.Database database)
+        {
+
+        }
+
+        public void Remove(ProductExemplaar productExemplaar, Database.Database database)
+        {
+
+        }
     }
 }

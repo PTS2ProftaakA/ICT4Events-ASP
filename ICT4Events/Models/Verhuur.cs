@@ -72,5 +72,20 @@ namespace ICT4Events.Models
             this._prijs = prijs;
             this._betaald = betaald;
         }
+
+        public void Add(Verhuur verhuur, Database.Database database)
+        {
+
+        }
+
+        public void Edit(Verhuur verhuur, Database.Database database)
+        {
+
+        }
+
+        public void Remove(Verhuur verhuur, Database.Database database)
+        {
+
+        }
     }
 }

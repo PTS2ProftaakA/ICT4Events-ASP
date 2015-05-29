@@ -5,7 +5,7 @@ using System.Web;
 
 namespace ICT4Events.Models
 {
-    public class Account
+    public class Account : Database.IDatabase<Account>
     {
         //Fields
         private int _id;
@@ -55,6 +55,21 @@ namespace ICT4Events.Models
             this._email = email;
             this._activatieHash = activatiehash;
             this._geactiveerd = geactiveerd;
+        }
+
+        public void Add(Account account, Database.Database database)
+        {
+            
+        }
+
+        public void Edit(Account account, Database.Database database)
+        {
+
+        }
+
+        public void Remove(Account account, Database.Database database)
+        {
+
         }
     }
 }

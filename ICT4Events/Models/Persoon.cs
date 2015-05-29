@@ -88,5 +88,20 @@ namespace ICT4Events.Models
             this._banknr = banknr;
             this._reserveringen = reserveringen;
         }
+
+        public void Add(Persoon persoon, Database.Database database)
+        {
+
+        }
+
+        public void Edit(Persoon persoon, Database.Database database)
+        {
+
+        }
+
+        public void Remove(Persoon persoon, Database.Database database)
+        {
+
+        }
     }
 }

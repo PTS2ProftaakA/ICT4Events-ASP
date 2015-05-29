@@ -72,5 +72,20 @@ namespace ICT4Events.Models
             this._plekReserveringen = plekReserveringen;
             this._reserveringPolsbandjes = reserveringPolsbandjes;
         }
+
+        public void Add(Reservering reservering, Database.Database database)
+        {
+
+        }
+
+        public void Edit(Reservering reservering, Database.Database database)
+        {
+
+        }
+
+        public void Remove(Reservering reservering, Database.Database database)
+        {
+
+        }
     }
 }

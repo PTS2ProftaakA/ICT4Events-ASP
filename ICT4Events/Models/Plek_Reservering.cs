@@ -40,5 +40,20 @@ namespace ICT4Events.Models
             this._plek = plek;
             this._reservering = reservering;
         }
+
+        public void Add(Plek_Reservering plekReservering, Database.Database database)
+        {
+
+        }
+
+        public void Edit(Plek_Reservering plekReservering, Database.Database database)
+        {
+
+        }
+
+        public void Remove(Plek_Reservering plekReservering, Database.Database database)
+        {
+
+        }
     }
 }

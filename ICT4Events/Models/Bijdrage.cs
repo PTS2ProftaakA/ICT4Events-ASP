@@ -55,5 +55,20 @@ namespace ICT4Events.Models
             this._datum = datum;
             this._soort = soort;
         }
+
+        public void Add(Bijdrage bijdrage, Database.Database database)
+        {
+
+        }
+
+        public void Edit(Bijdrage bijdrage, Database.Database database)
+        {
+
+        }
+
+        public void Remove(Bijdrage bijdrage, Database.Database database)
+        {
+
+        }
     }
 }

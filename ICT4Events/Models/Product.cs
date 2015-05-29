@@ -72,5 +72,20 @@ namespace ICT4Events.Models
             this._prijs = prijs;
             this._productExemplaren = productExemplaren;
         }
+
+        public void Add(Product product, Database.Database database)
+        {
+
+        }
+
+        public void Edit(Product product, Database.Database database)
+        {
+
+        }
+
+        public void Remove(Product product, Database.Database database)
+        {
+
+        }
     }
 }

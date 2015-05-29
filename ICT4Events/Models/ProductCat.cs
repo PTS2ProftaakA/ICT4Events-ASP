@@ -48,5 +48,20 @@ namespace ICT4Events.Models
             this._naam = naam;
             this._producten = producten;
         }
+
+        public void Add(ProductCat productCat, Database.Database database)
+        {
+
+        }
+
+        public void Edit(ProductCat productCat, Database.Database database)
+        {
+
+        }
+
+        public void Remove(ProductCat productCat, Database.Database database)
+        {
+
+        }
     }
 }

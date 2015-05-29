@@ -64,5 +64,20 @@ namespace ICT4Events.Models
             this._datumEinde = datumEinde;
             this._maxBezoekers = maxBezoekers;
         }
+
+        public void Add(Event thisEvent, Database.Database database)
+        {
+
+        }
+
+        public void Edit(Event thisEvent, Database.Database database)
+        {
+
+        }
+
+        public void Remove(Event thisEvent, Database.Database database)
+        {
+
+        }
     }
 }

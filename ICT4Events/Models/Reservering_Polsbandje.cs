@@ -64,5 +64,20 @@ namespace ICT4Events.Models
             this._aanwezig = aanwezig;
             this._verhuren = verhuren;
         }
+
+        public void Add(Reservering_Polsbandje reserveringPolsbandje, Database.Database database)
+        {
+
+        }
+
+        public void Edit(Reservering_Polsbandje reserveringPolsbandje, Database.Database database)
+        {
+
+        }
+
+        public void Remove(Reservering_Polsbandje reserveringPolsbandje, Database.Database database)
+        {
+
+        }
     }
 }

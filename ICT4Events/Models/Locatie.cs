@@ -80,5 +80,20 @@ namespace ICT4Events.Models
             this._events = events;
             this._plekken = plekken;
         }
+
+        public void Add(Locatie locatie, Database.Database database)
+        {
+
+        }
+
+        public void Edit(Locatie locatie, Database.Database database)
+        {
+
+        }
+
+        public void Remove(Locatie locatie, Database.Database database)
+        {
+
+        }
     }
 }
