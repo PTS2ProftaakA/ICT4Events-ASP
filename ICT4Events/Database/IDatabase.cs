@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace ICT4Events.Database
 {
-    interface IDatabase<T> where T : class
+    interface IDatabase
     {
-        void Toevoegen(T type, Database database);
+        void Toevoegen(Database database);
 
-        void Aanpassen(T type, Database database);
+        void Aanpassen(Database database);
 
-        void Verwijderen(T type, Database database);
+        void Verwijderen(Database database);
     }
 }

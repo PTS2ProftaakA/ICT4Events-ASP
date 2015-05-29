@@ -5,7 +5,7 @@ using System.Web;
 
 namespace ICT4Events.Models
 {
-    public class Account : Database.IDatabase<Account>
+    public class Account : Database.IDatabase
     {
         //Fields
         private int _id;
@@ -14,7 +14,6 @@ namespace ICT4Events.Models
         private string _activatieHash;
         private bool _geactiveerd;
         private List<Bijdrage> _bijdrages;
-        private List<Account_Bijdrage> _accountBijdrages;
 
 
         //Properties
@@ -54,11 +53,6 @@ namespace ICT4Events.Models
             get { return _bijdrages; }
             set { _bijdrages = value; }
         }
-        public List<Account_Bijdrage> AccountBijdrage
-        {
-            get { return _accountBijdrages; }
-            set { _accountBijdrages = value; }
-        }
         #endregion
 
         //Constructor
@@ -71,17 +65,17 @@ namespace ICT4Events.Models
             this._geactiveerd = geactiveerd;
         }
 
-        public void Toevoegen(Account account, Database.Database database)
+        public void Toevoegen(Database.Database database)
         {
             
         }
 
-        public void Aanpassen(Account account, Database.Database database)
+        public void Aanpassen(Database.Database database)
         {
 
         }
 
-        public void Verwijderen(Account account, Database.Database database)
+        public void Verwijderen(Database.Database database)
         {
 
         }

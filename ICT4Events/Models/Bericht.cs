@@ -10,6 +10,7 @@ namespace ICT4Events.Models
         //Fields
         private string _titel;
         private string _inhoud;
+        private Bijdrage _bijdrage;
 
         //Properties
         #region properties
@@ -24,27 +25,34 @@ namespace ICT4Events.Models
             get { return _inhoud; }
             set { _inhoud = value; }
         }
+
+        public Bijdrage Bijdrage
+        {
+            get { return _bijdrage; }
+            set { _bijdrage = value; }
+        }
         #endregion
 
         //Constructor
-        public Bericht(int id, Account account, DateTime datum, BijdrageType soort, string titel, string inhoud)
+        public Bericht(int id, Account account, DateTime datum, BijdrageType soort, string titel, string inhoud, Bijdrage bijdrage)
             : base(id, account, datum, soort)
         {
             this._titel = titel;
             this._inhoud = inhoud;
+            this._bijdrage = bijdrage;
         }
 
-        public void Add(Bericht bericht, Database.Database database)
+        public void Toevoegen(Database.Database database)
         {
 
         }
 
-        public void Edit(Bericht bericht, Database.Database database)
+        public void Aanpassen(Database.Database database)
         {
 
         }
 
-        public void Remove(Bericht bericht, Database.Database database)
+        public void Verwijderen(Database.Database database)
         {
 
         }

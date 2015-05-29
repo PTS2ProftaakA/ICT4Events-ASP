@@ -42,17 +42,17 @@ namespace ICT4Events.Models
             this._grootte = grootte;
         }
 
-        public void Add(Bestand bestand, Database.Database database)
+        public void Toevoegen(Database.Database database)
         {
 
         }
 
-        public void Edit(Bestand bestand, Database.Database database)
+        public void Aanpassen(Database.Database database)
         {
 
         }
 
-        public void Remove(Bestand bestand, Database.Database database)
+        public void Verwijderen(Database.Database database)
         {
 
         }

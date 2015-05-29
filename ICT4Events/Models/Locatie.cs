@@ -5,7 +5,7 @@ using System.Web;
 
 namespace ICT4Events.Models
 {
-    public class Locatie : Database.IDatabase<Locatie>
+    public class Locatie : Database.IDatabase
     {
         //Fields
         private int _id;
@@ -14,7 +14,6 @@ namespace ICT4Events.Models
         private int _nr;
         private string _postcode;
         private string _plaats;
-        private List<ICT4Events.Models.Event> _events;
         private List<Plek> _plekken;
 
         //Properties
@@ -55,12 +54,6 @@ namespace ICT4Events.Models
             set { _plaats = value; }
         }
 
-        public List<ICT4Events.Models.Event> Events
-        {
-            get { return _events; }
-            set { _events = value; }
-        }
-
         public List<Plek> Plekken
         {
             get { return _plekken; }
@@ -69,7 +62,7 @@ namespace ICT4Events.Models
         #endregion
 
         //Constructor
-        public Locatie(int id, string naam, string straat, int nr, string postcode, string plaats, List<ICT4Events.Models.Event> events, List<Plek> plekken)
+        public Locatie(int id, string naam, string straat, int nr, string postcode, string plaats, List<Plek> plekken)
         {
             this._id = id;
             this._naam = naam;
@@ -77,21 +70,20 @@ namespace ICT4Events.Models
             this._nr = nr;
             this._postcode = postcode;
             this._plaats = plaats;
-            this._events = events;
             this._plekken = plekken;
         }
 
-        public void Toevoegen(Locatie locatie, Database.Database database)
+        public void Toevoegen(Database.Database database)
         {
 
         }
 
-        public void Aanpassen(Locatie locatie, Database.Database database)
+        public void Aanpassen(Database.Database database)
         {
 
         }
 
-        public void Verwijderen(Locatie locatie, Database.Database database)
+        public void Verwijderen(Database.Database database)
         {
 
         }

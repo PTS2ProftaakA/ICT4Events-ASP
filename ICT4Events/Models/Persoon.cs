@@ -5,7 +5,7 @@ using System.Web;
 
 namespace ICT4Events.Models
 {
-    public class Persoon : Database.IDatabase<Persoon>
+    public class Persoon : Database.IDatabase
     {
         //Fields
         private int _id;
@@ -16,7 +16,6 @@ namespace ICT4Events.Models
         private int _huisnr;
         private string _woonplaats;
         private string _banknr;
-        private List<Reservering> _reserveringen;
 
         //Properties
         #region Properties
@@ -67,16 +66,10 @@ namespace ICT4Events.Models
             get { return _banknr; }
             set { _banknr = value; }
         }
-
-        public List<Reservering> Reserveringen
-        {
-            get { return _reserveringen; }
-            set { _reserveringen = value; }
-        }
         #endregion
 
         //Constructor
-        public Persoon(int id, string voornaam, string tussenvoegsel, string achternaam, string straat, string woonplaats, int huisnr, string banknr, List<Reservering> reserveringen)
+        public Persoon(int id, string voornaam, string tussenvoegsel, string achternaam, string straat, string woonplaats, int huisnr, string banknr)
         {
             this._id = id;
             this._voornaam = voornaam;
@@ -86,20 +79,19 @@ namespace ICT4Events.Models
             this._woonplaats = woonplaats;
             this._huisnr = huisnr;
             this._banknr = banknr;
-            this._reserveringen = reserveringen;
         }
 
-        public void Toevoegen(Persoon persoon, Database.Database database)
+        public void Toevoegen(Database.Database database)
         {
 
         }
 
-        public void Aanpassen(Persoon persoon, Database.Database database)
+        public void Aanpassen(Database.Database database)
         {
 
         }
 
-        public void Verwijderen(Persoon persoon, Database.Database database)
+        public void Verwijderen(Database.Database database)
         {
 
         }

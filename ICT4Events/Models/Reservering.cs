@@ -5,7 +5,7 @@ using System.Web;
 
 namespace ICT4Events.Models
 {
-    public class Reservering : Database.IDatabase<Reservering>
+    public class Reservering : Database.IDatabase
     {
         //Fields
         private int _id;
@@ -13,8 +13,7 @@ namespace ICT4Events.Models
         private DateTime _datumStart;
         private DateTime _datumEinde;
         private bool _betaald;
-        private List<Plek_Reservering> _plekReserveringen;
-        private List<Reservering_Polsbandje> _reserveringPolsbandjes;
+        private Plek _plek;
 
         //Properties
         #region Properties
@@ -48,42 +47,35 @@ namespace ICT4Events.Models
             set { _betaald = value; }
         }
 
-        public List<Plek_Reservering> PlekReserveringen
+        public Plek Plek
         {
-            get { return _plekReserveringen; }
-            set { _plekReserveringen = value; }
-        }
-
-        public List<Reservering_Polsbandje> ReserveringPolsbandjes
-        {
-            get { return _reserveringPolsbandjes; }
-            set { _reserveringPolsbandjes = value; }
+            get { return _plek; }
+            set { _plek = value; }
         }
         #endregion
 
         //Constructor
-        public Reservering(int id, Persoon persoon, DateTime datumStart, DateTime datumEinde, bool betaald, List<Plek_Reservering> plekReserveringen, List<Reservering_Polsbandje> reserveringPolsbandjes)
+        public Reservering(int id, Persoon persoon, DateTime datumStart, DateTime datumEinde, bool betaald, Plek plek)
         {
             this._id = id;
             this._persoon = persoon;
             this._datumStart = datumStart;
             this._datumEinde = datumEinde;
             this._betaald = betaald;
-            this._plekReserveringen = plekReserveringen;
-            this._reserveringPolsbandjes = reserveringPolsbandjes;
+            this._plek = plek;
         }
 
-        public void Toevoegen(Reservering reservering, Database.Database database)
+        public void Toevoegen(Database.Database database)
         {
 
         }
 
-        public void Aanpassen(Reservering reservering, Database.Database database)
+        public void Aanpassen(Database.Database database)
         {
 
         }
 
-        public void Verwijderen(Reservering reservering, Database.Database database)
+        public void Verwijderen(Database.Database database)
         {
 
         }

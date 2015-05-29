@@ -5,14 +5,13 @@ using System.Web;
 
 namespace ICT4Events.Models
 {
-    public class Plek : Database.IDatabase<Plek>
+    public class Plek : Database.IDatabase
     {
         //Fields
         private Locatie _locatie;
         private int _nummer;
         private int _capaciteit;
-        private List<Plek_Reservering> _plekReserveringen;
-        private List<KeyValuePair<string, string>> _specificaties;
+        private List<Specificatie> _specificaties;
 
         //Properties
         #region Properties
@@ -34,13 +33,7 @@ namespace ICT4Events.Models
             set { _capaciteit = value; }
         }
 
-        public List<Plek_Reservering> PlekReserveringen
-        {
-            get { return _plekReserveringen; }
-            set { _plekReserveringen = value; }
-        }
-
-        public List<KeyValuePair<string, string>> Specificaties
+        public List<Specificatie> Specificaties
         {
             get { return _specificaties; }
             set { _specificaties = value; }
@@ -48,26 +41,25 @@ namespace ICT4Events.Models
         #endregion
 
         //Constructors
-        public Plek(Locatie locatie, int nummer, int capaciteit, List<Plek_Reservering> plekReserveringen, List<KeyValuePair<string, string>> specificaties)
+        public Plek(Locatie locatie, int nummer, int capaciteit, List<Specificatie> specificaties)
         {
             this._locatie = locatie;
             this._nummer = nummer;
             this._capaciteit = capaciteit;
-            this._plekReserveringen = plekReserveringen;
             this._specificaties = specificaties;
         }
 
-        public void Toevoegen(Plek plek, Database.Database database)
+        public void Toevoegen(Database.Database database)
         {
 
         }
 
-        public void Aanpassen(Plek plek, Database.Database database)
+        public void Aanpassen(Database.Database database)
         {
 
         }
 
-        public void Verwijderen(Plek plek, Database.Database database)
+        public void Verwijderen(Database.Database database)
         {
 
         }

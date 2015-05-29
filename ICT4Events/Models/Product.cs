@@ -5,7 +5,7 @@ using System.Web;
 
 namespace ICT4Events.Models
 {
-    public class Product : Database.IDatabase<Product>
+    public class Product : Database.IDatabase
     {
         //Fields
         private int _id;
@@ -14,7 +14,6 @@ namespace ICT4Events.Models
         private string _serie;
         private int _typenummer;
         private int _prijs;
-        private List<ProductExemplaar> _productExemplaren;
 
         //Properties
         #region Properties
@@ -53,16 +52,10 @@ namespace ICT4Events.Models
             get { return _prijs; }
             set { _prijs = value; }
         }
-
-        public List<ProductExemplaar> ProductExemplaren
-        {
-            get { return _productExemplaren; }
-            set { _productExemplaren = value; }
-        }
         #endregion
 
         //Constructors
-        public Product(int id, ProductCat productCategorie, string merk, string serie, int typenummer, int prijs, List<ProductExemplaar> productExemplaren)
+        public Product(int id, ProductCat productCategorie, string merk, string serie, int typenummer, int prijs)
         {
             this._id = id;
             this._productCategorie = productCategorie;
@@ -70,20 +63,19 @@ namespace ICT4Events.Models
             this._serie = serie;
             this._typenummer = typenummer;
             this._prijs = prijs;
-            this._productExemplaren = productExemplaren;
         }
 
-        public void Toevoegen(Product product, Database.Database database)
+        public void Toevoegen(Database.Database database)
         {
 
         }
 
-        public void Aanpassen(Product product, Database.Database database)
+        public void Aanpassen(Database.Database database)
         {
 
         }
 
-        public void Verwijderen(Product product, Database.Database database)
+        public void Verwijderen(Database.Database database)
         {
 
         }

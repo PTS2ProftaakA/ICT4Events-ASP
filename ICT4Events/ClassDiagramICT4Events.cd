@@ -281,7 +281,7 @@
     <TypeIdentifier />
   </Struct>
   <Interface Name="ICT4Events.Database.IDatabase&lt;T&gt;">
-    <Position X="11.75" Y="11.5" Width="1.5" />
+    <Position X="11.75" Y="8.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAI=</HashCode>
       <FileName>Database\IDatabase.cs</FileName>

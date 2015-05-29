@@ -2,43 +2,43 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using ICT4Events.Database;
 
 namespace ICT4Events.Models
 {
-    public class ProductCat : Database.IDatabase
+    public class Specificatie : IDatabase
     {
         //Fields
         private int _id;
-        private ProductCat _productCat;
-        private string _naam;
+        private string _waarde;
 
         //Properties
-        #region Properties
-        public int ID
+        #region properties
+
+        public int Id
         {
             get { return _id; }
             set { _id = value; }
         }
 
-        public ProductCat SubProductCat
+        public Plek Plek
         {
-            get { return _productCat; }
-            set { _productCat = value; }
+            get { return _plek; }
+            set { _plek = value; }
         }
 
-        public string Naam
+        public string Waarde
         {
-            get { return _naam; }
-            set { _naam = value; }
+            get { return _waarde; }
+            set { _waarde = value; }
         }
         #endregion
 
-        //Constructors
-        public ProductCat(int id, ProductCat productCat, string naam)
+        //Constructor
+        public Specificatie(int id, string waarde)
         {
             this._id = id;
-            this._productCat = productCat;
-            this._naam = naam;
+            this._waarde = waarde;
         }
 
         public void Toevoegen(Database.Database database)

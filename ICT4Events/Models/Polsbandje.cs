@@ -5,7 +5,7 @@ using System.Web;
 
 namespace ICT4Events.Models
 {
-    public class Polsbandje : Database.IDatabase<Polsbandje>
+    public class Polsbandje : Database.IDatabase
     {
         //Fields
         private int _id;
@@ -49,17 +49,17 @@ namespace ICT4Events.Models
             this._reserveringPolsbandjes = reserveringPolsbandjes;
         }
 
-        public void Toevoegen(Polsbandje polsbandje, Database.Database database)
+        public void Toevoegen(Database.Database database)
         {
 
         }
 
-        public void Aanpassen(Polsbandje polsbandje, Database.Database database)
+        public void Aanpassen(Database.Database database)
         {
 
         }
 
-        public void Verwijderen(Polsbandje polsbandje, Database.Database database)
+        public void Verwijderen(Database.Database database)
         {
 
         }

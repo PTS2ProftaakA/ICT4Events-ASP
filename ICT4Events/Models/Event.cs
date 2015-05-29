@@ -5,7 +5,7 @@ using System.Web;
 
 namespace ICT4Events.Models
 {
-    public class Event : Database.IDatabase<Event>
+    public class Event : Database.IDatabase
     {
         //Fields
         private int _id;
@@ -65,17 +65,17 @@ namespace ICT4Events.Models
             this._maxBezoekers = maxBezoekers;
         }
 
-        public void Toevoegen(Event thisEvent, Database.Database database)
+        public void Toevoegen(Database.Database database)
         {
 
         }
 
-        public void Aanpassen(Event thisEvent, Database.Database database)
+        public void Aanpassen(Database.Database database)
         {
 
         }
 
-        public void Verwijderen(Event thisEvent, Database.Database database)
+        public void Verwijderen(Database.Database database)
         {
 
         }

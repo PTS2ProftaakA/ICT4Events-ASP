@@ -5,7 +5,7 @@ using System.Web;
 
 namespace ICT4Events.Models
 {
-    public abstract class Bijdrage : Database.IDatabase<Bijdrage>
+    public abstract class Bijdrage : Database.IDatabase
     {
         public enum  BijdrageType
         {
@@ -19,7 +19,6 @@ namespace ICT4Events.Models
         private Account _account;
         private DateTime _datum;
         private BijdrageType _soort;
-        private List<Account_Bijdrage> _accountBijdrages;
 
         //Properties
         #region Properties
@@ -46,11 +45,6 @@ namespace ICT4Events.Models
             get { return _soort; }
             set { _soort = value; }
         }
-        public List<Account_Bijdrage> AccountBijdrage
-        {
-            get { return _accountBijdrages; }
-            set { _accountBijdrages = value; }
-        }
         #endregion
 
         //Constructor
@@ -62,17 +56,17 @@ namespace ICT4Events.Models
             this._soort = soort;
         }
 
-        public void Toevoegen(Bijdrage bijdrage, Database.Database database)
+        public void Toevoegen(Database.Database database)
         {
 
         }
 
-        public void Aanpassen(Bijdrage bijdrage, Database.Database database)
+        public void Aanpassen(Database.Database database)
         {
 
         }
 
-        public void Verwijderen(Bijdrage bijdrage, Database.Database database)
+        public void Verwijderen(Database.Database database)
         {
 
         }
