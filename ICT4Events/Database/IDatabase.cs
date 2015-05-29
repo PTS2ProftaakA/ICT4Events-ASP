@@ -8,10 +8,10 @@ namespace ICT4Events.Database
 {
     interface IDatabase<T> where T : class
     {
-        void Add(T type, Database database);
+        void Toevoegen(T type, Database database);
 
-        void Edit(T type, Database database);
+        void Aanpassen(T type, Database database);
 
-        void Remove(T type, Database database);
+        void Verwijderen(T type, Database database);
     }
 }
