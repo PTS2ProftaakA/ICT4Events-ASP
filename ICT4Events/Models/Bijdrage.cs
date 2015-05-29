@@ -19,6 +19,7 @@ namespace ICT4Events.Models
         private Account _account;
         private DateTime _datum;
         private BijdrageType _soort;
+        private List<Account_Bijdrage> _accountBijdrages;
 
         //Properties
         #region Properties
@@ -44,6 +45,11 @@ namespace ICT4Events.Models
         {
             get { return _soort; }
             set { _soort = value; }
+        }
+        public List<Account_Bijdrage> AccountBijdrage
+        {
+            get { return _accountBijdrages; }
+            set { _accountBijdrages = value; }
         }
         #endregion
 

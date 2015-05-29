@@ -1,2 +1,291 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ClassDiagram /> 
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ICT4Events.Models.Reservering_Polsbandje">
+    <Position X="9.25" Y="4.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AQAIAQAAAAAAwAEAAABAAAAAgAAAgAAIEAABAAQAAEI=</HashCode>
+      <FileName>Models\Reservering_Polsbandje.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Polsbandje" />
+      <Property Name="Account" />
+      <Property Name="Reservering" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Verhuren" />
+    </ShowAsCollectionAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ICT4Events.Models.Bericht">
+    <Position X="17" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AQAAAgAAAAgAQAAAAAAAAAAAAAAAgAAAAAAAAAAQAAI=</HashCode>
+      <FileName>Models\Bericht.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ICT4Events.Models.Bestand">
+    <Position X="17" Y="3.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAIAAAAgAACAABAAAAAAgAAAAAAgAAAAAAI=</HashCode>
+      <FileName>Models\Bestand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ICT4Events.Models.Bijdrage">
+    <Position X="14.25" Y="5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="ICT4Events.Models.Bijdrage.BijdrageType" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Models\Bijdrage.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AQAEAAAAAAAAwgAAAABAAEAAAAACgBQAAAAAAAAAAEI=</HashCode>
+      <FileName>Models\Bijdrage.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Account" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="AccountBijdrage" />
+    </ShowAsCollectionAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ICT4Events.Models.Categorie">
+    <Position X="14.25" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AQAAAAAIAAIIAAAAAAAABAAAAAAAgAAAAAAAEAAAAAI=</HashCode>
+      <FileName>Models\Categorie.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ICT4Events.Models.Polsbandje">
+    <Position X="9.25" Y="7.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AQAAAAAgAgEAgAAgAABAAAAAABAAgAAAAACAAAAAAAI=</HashCode>
+      <FileName>Models\Polsbandje.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="ReserveringPolsbandjes" />
+    </ShowAsCollectionAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ICT4Events.Models.Account">
+    <Position X="11.75" Y="5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AQQEAQAABCAAhAAAAABAAAAIAQAAgBIAAAAAAACAAAM=</HashCode>
+      <FileName>Models\Account.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Bijdrages" />
+      <Property Name="AccountBijdrage" />
+    </ShowAsCollectionAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ICT4Events.Models.Reservering">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AQAAAIQgAAAQgAAgAABYAgAAAgAAgAAIAAAIAAAAAQI=</HashCode>
+      <FileName>Models\Reservering.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Persoon" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="PlekReserveringen" />
+    </ShowAsCollectionAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ICT4Events.Models.Persoon">
+    <Position X="11.75" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AQAABAAgAAAIgAAAAApQBAAAGACEgAAABAAAQAEAEAI=</HashCode>
+      <FileName>Models\Persoon.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Reserveringen" />
+    </ShowAsCollectionAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ICT4Events.Models.Plek_Reservering">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AQAIAAAAIAAAgAAAAABAAAAAAAAAgCAAEAAAAAAAAAI=</HashCode>
+      <FileName>Models\Plek_Reservering.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Plek" />
+      <Property Name="Reservering" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ICT4Events.Models.Plek">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>EYAAAAQAACAAAAAAAAICAAAAAgAAgAAAACAAAAgAAQI=</HashCode>
+      <FileName>Models\Plek.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Locatie" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Specificaties" />
+      <Property Name="PlekReserveringen" />
+    </ShowAsCollectionAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ICT4Events.Models.Locatie">
+    <Position X="1.5" Y="3.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AUAACAAAQAAAgBAAAABAhAAAAgCAgABAAgAAAECAAAI=</HashCode>
+      <FileName>Models\Locatie.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Plekken" />
+      <Property Name="Events" />
+    </ShowAsCollectionAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ICT4Events.Models.Event">
+    <Position X="4" Y="3.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AQAAAIEAACAQgAQAAABIBAAAAgAAgAAIAAAAAAAAAAI=</HashCode>
+      <FileName>Models\Event.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Locatie" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ICT4Events.Models.Verhuur">
+    <Position X="6.5" Y="3.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AQAgAABAAAIAiBQAAAJUAgAAAAAAoAEAAAAAAAAAAAI=</HashCode>
+      <FileName>Models\Verhuur.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ReserveringPolsbandje" />
+      <Property Name="ProductExemplaar" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ICT4Events.Models.ProductExemplaar">
+    <Position X="6.75" Y="7.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AQACIAAAAgEAgAAAAAFAAAAAAAAAgAAIAIABAAAAAAI=</HashCode>
+      <FileName>Models\ProductExemplaar.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Product" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Verhuren" />
+    </ShowAsCollectionAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ICT4Events.Models.Product">
+    <Position X="4" Y="7.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAgAAAAAJEAASAAAAAoAAiAAAAAAkCAAc=</HashCode>
+      <FileName>Models\Product.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ProductCategorie" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="ProductExemplaren" />
+    </ShowAsCollectionAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ICT4Events.Models.ProductCat">
+    <Position X="1.5" Y="7.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAQAgAAAABBABACAAAAAgAAAAAAAAAAAAAM=</HashCode>
+      <FileName>Models\ProductCat.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="SubProductCat" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Producten" />
+    </ShowAsCollectionAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ICT4Events.Models.Account_Bijdrage">
+    <Position X="17" Y="7.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>IYAAAAAAAAAAwAAAAABIAAAIAAAAgBAAAAAAAAABAEI=</HashCode>
+      <FileName>Models\Account_Bijdrage.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Account" />
+      <Property Name="Bijdrage" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Struct Name="System.Collections.Generic.KeyValuePair&lt;TKey, TValue&gt;">
+    <Position X="1.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Struct>
+  <Interface Name="ICT4Events.Database.IDatabase&lt;T&gt;">
+    <Position X="11.75" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Database\IDatabase.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

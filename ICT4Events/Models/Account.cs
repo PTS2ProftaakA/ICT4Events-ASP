@@ -13,6 +13,9 @@ namespace ICT4Events.Models
         private string _email;
         private string _activatieHash;
         private bool _geactiveerd;
+        private List<Bijdrage> _bijdrages;
+        private List<Account_Bijdrage> _accountBijdrages;
+
 
         //Properties
         #region Properties
@@ -44,6 +47,17 @@ namespace ICT4Events.Models
         {
             get { return _geactiveerd; }
             set { _geactiveerd = value; }
+        }
+
+        public List<Bijdrage> Bijdrages
+        {
+            get { return _bijdrages; }
+            set { _bijdrages = value; }
+        }
+        public List<Account_Bijdrage> AccountBijdrage
+        {
+            get { return _accountBijdrages; }
+            set { _accountBijdrages = value; }
         }
         #endregion
 
