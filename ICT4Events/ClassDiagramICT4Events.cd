@@ -10,9 +10,9 @@
       <FileName>Models\Reservering_Polsbandje.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
+      <Property Name="Reservering" />
       <Property Name="Polsbandje" />
       <Property Name="Account" />
-      <Property Name="Reservering" />
     </ShowAsAssociation>
     <ShowAsCollectionAssociation>
       <Property Name="Verhuren" />
@@ -25,7 +25,7 @@
       <Compartment Name="Fields" Collapsed="true" />
     </Compartments>
     <TypeIdentifier>
-      <HashCode>AQAAAgAAAAgAQAAAAAAAAAAAAAAAgAAAAAAAAAAQAAI=</HashCode>
+      <HashCode>IQAAAgAAAAgAQAAAAAAAAAAIAAAAgAAAAAAAAAAQAAI=</HashCode>
       <FileName>Models\Bericht.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -52,15 +52,12 @@
       </Enum>
     </NestedTypes>
     <TypeIdentifier>
-      <HashCode>AQAEAAAAAAAAwgAAAABAAEAAAAACgBQAAAAAAAAAAEI=</HashCode>
+      <HashCode>AQAAAAAAAAAAwgAAAABAAEAAAAACgAQAAAAAAAAAAEI=</HashCode>
       <FileName>Models\Bijdrage.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="Account" />
     </ShowAsAssociation>
-    <ShowAsCollectionAssociation>
-      <Property Name="AccountBijdrage" />
-    </ShowAsCollectionAssociation>
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="ICT4Events.Models.Categorie">
@@ -69,7 +66,7 @@
       <Compartment Name="Fields" Collapsed="true" />
     </Compartments>
     <TypeIdentifier>
-      <HashCode>AQAAAAAIAAIIAAAAAAAABAAAAAAAgAAAAAAAEAAAAAI=</HashCode>
+      <HashCode>AQAAAAAAAAIIAAAAAAAABAAAAAAAgAAAAAAAAAAAAAI=</HashCode>
       <FileName>Models\Categorie.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -93,12 +90,11 @@
       <Compartment Name="Fields" Collapsed="true" />
     </Compartments>
     <TypeIdentifier>
-      <HashCode>AQQEAQAABCAAhAAAAABAAAAIAQAAgBIAAAAAAACAAAM=</HashCode>
+      <HashCode>AQQAAQAABCAAhAAAAABAAAAIAQAAgAIAAAAAAACAAAM=</HashCode>
       <FileName>Models\Account.cs</FileName>
     </TypeIdentifier>
     <ShowAsCollectionAssociation>
       <Property Name="Bijdrages" />
-      <Property Name="AccountBijdrage" />
     </ShowAsCollectionAssociation>
     <Lollipop Position="0.2" />
   </Class>
@@ -108,15 +104,12 @@
       <Compartment Name="Fields" Collapsed="true" />
     </Compartments>
     <TypeIdentifier>
-      <HashCode>AQAAAIQgAAAQgAAgAABYAgAAAgAAgAAIAAAIAAAAAQI=</HashCode>
+      <HashCode>AQAAAIAAIAAQgAAAAABYAgAAAgAAgCAIAAAIAAAAAAI=</HashCode>
       <FileName>Models\Reservering.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="Persoon" />
     </ShowAsAssociation>
-    <ShowAsCollectionAssociation>
-      <Property Name="PlekReserveringen" />
-    </ShowAsCollectionAssociation>
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="ICT4Events.Models.Persoon">
@@ -125,27 +118,9 @@
       <Compartment Name="Fields" Collapsed="true" />
     </Compartments>
     <TypeIdentifier>
-      <HashCode>AQAABAAgAAAIgAAAAApQBAAAGACEgAAABAAAQAEAEAI=</HashCode>
+      <HashCode>AQAAAAAgAAAIgAAAAApQAAAAGACEgAAABAAAQAEAEAI=</HashCode>
       <FileName>Models\Persoon.cs</FileName>
     </TypeIdentifier>
-    <ShowAsCollectionAssociation>
-      <Property Name="Reserveringen" />
-    </ShowAsCollectionAssociation>
-    <Lollipop Position="0.2" />
-  </Class>
-  <Class Name="ICT4Events.Models.Plek_Reservering">
-    <Position X="6.5" Y="0.5" Width="1.5" />
-    <Compartments>
-      <Compartment Name="Fields" Collapsed="true" />
-    </Compartments>
-    <TypeIdentifier>
-      <HashCode>AQAIAAAAIAAAgAAAAABAAAAAAAAAgCAAEAAAAAAAAAI=</HashCode>
-      <FileName>Models\Plek_Reservering.cs</FileName>
-    </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="Plek" />
-      <Property Name="Reservering" />
-    </ShowAsAssociation>
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="ICT4Events.Models.Plek">
@@ -154,16 +129,12 @@
       <Compartment Name="Fields" Collapsed="true" />
     </Compartments>
     <TypeIdentifier>
-      <HashCode>EYAAAAQAACAAAAAAAAICAAAAAgAAgAAAACAAAAgAAQI=</HashCode>
+      <HashCode>EYAAAAAAACAAAAAAAAICAAAAAgAAgAAAACAAAAgAAAI=</HashCode>
       <FileName>Models\Plek.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="Locatie" />
     </ShowAsAssociation>
-    <ShowAsCollectionAssociation>
-      <Property Name="Specificaties" />
-      <Property Name="PlekReserveringen" />
-    </ShowAsCollectionAssociation>
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="ICT4Events.Models.Locatie">
@@ -172,12 +143,11 @@
       <Compartment Name="Fields" Collapsed="true" />
     </Compartments>
     <TypeIdentifier>
-      <HashCode>AUAACAAAQAAAgBAAAABAhAAAAgCAgABAAgAAAECAAAI=</HashCode>
+      <HashCode>AQAACAAAQAAAgBAAAABAhAAAAACAgABAAgAAAECAAAI=</HashCode>
       <FileName>Models\Locatie.cs</FileName>
     </TypeIdentifier>
     <ShowAsCollectionAssociation>
       <Property Name="Plekken" />
-      <Property Name="Events" />
     </ShowAsCollectionAssociation>
     <Lollipop Position="0.2" />
   </Class>
@@ -205,8 +175,8 @@
       <FileName>Models\Verhuur.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Property Name="ReserveringPolsbandje" />
       <Property Name="ProductExemplaar" />
+      <Property Name="ReserveringPolsbandje" />
     </ShowAsAssociation>
     <Lollipop Position="0.2" />
   </Class>
@@ -233,15 +203,12 @@
       <Compartment Name="Fields" Collapsed="true" />
     </Compartments>
     <TypeIdentifier>
-      <HashCode>AQAAAAAAAAAAgAAAAAJEAASAAAAAoAAiAAAAAAkCAAc=</HashCode>
+      <HashCode>AQAAAAAAAAAAgAAAAAJEAACAAAAAoAAgAAAAAAkCAAc=</HashCode>
       <FileName>Models\Product.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="ProductCategorie" />
     </ShowAsAssociation>
-    <ShowAsCollectionAssociation>
-      <Property Name="ProductExemplaren" />
-    </ShowAsCollectionAssociation>
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="ICT4Events.Models.ProductCat">
@@ -250,15 +217,12 @@
       <Compartment Name="Fields" Collapsed="true" />
     </Compartments>
     <TypeIdentifier>
-      <HashCode>AQAAAAAAAAQAgAAAABBABACAAAAAgAAAAAAAAAAAAAM=</HashCode>
+      <HashCode>AQAAAAAAAAQAgAAAABBABAAAAAAAgAAAAAAAAAAAAAI=</HashCode>
       <FileName>Models\ProductCat.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="SubProductCat" />
     </ShowAsAssociation>
-    <ShowAsCollectionAssociation>
-      <Property Name="Producten" />
-    </ShowAsCollectionAssociation>
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="ICT4Events.Models.Account_Bijdrage">
@@ -280,7 +244,7 @@
     <Position X="1.5" Y="0.5" Width="1.5" />
     <TypeIdentifier />
   </Struct>
-  <Interface Name="ICT4Events.Database.IDatabase&lt;T&gt;">
+  <Interface Name="ICT4Events.Database.IDatabase">
     <Position X="11.75" Y="8.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAI=</HashCode>
