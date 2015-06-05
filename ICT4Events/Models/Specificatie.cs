@@ -21,12 +21,6 @@ namespace ICT4Events.Models
             set { _id = value; }
         }
 
-        public Plek Plek
-        {
-            get { return _plek; }
-            set { _plek = value; }
-        }
-
         public string Waarde
         {
             get { return _waarde; }
