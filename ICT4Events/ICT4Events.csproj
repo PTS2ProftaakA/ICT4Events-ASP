@@ -61,6 +61,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Bestandsbeheer.aspx" />
     <Content Include="ClassDiagramICT4Events.cd" />
     <Content Include="packages.config" />
     <None Include="Web.Debug.config">
@@ -76,6 +77,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bestandsbeheer.aspx.cs">
+      <DependentUpon>Bestandsbeheer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Bestandsbeheer.aspx.designer.cs">
+      <DependentUpon>Bestandsbeheer.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Database\Database.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
