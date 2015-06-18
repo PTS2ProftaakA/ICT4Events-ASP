@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
-using Oracle.ManagedDataAccess;
 using Oracle.ManagedDataAccess.Client;
 
 namespace ICT4Events.Database
@@ -112,6 +110,17 @@ namespace ICT4Events.Database
             else
             {
                 return null;
+            }
+        }
+
+        public object ScalarQuery(string query, params object[] args)
+        {
+            if (!Connect()) return null;
+            using (var command = new OracleCommand(String.Format(query, args), _connection))
+            {
+                var obj = command.ExecuteScalar();
+                Close();
+                return obj;
             }
         }
     }

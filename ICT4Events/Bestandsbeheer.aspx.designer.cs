@@ -13,13 +13,13 @@ namespace ICT4Events {
     public partial class Bestandsbeheer {
         
         /// <summary>
-        /// mainForm control.
+        /// formBestanden control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm mainForm;
+        protected global::System.Web.UI.HtmlControls.HtmlForm formBestanden;
         
         /// <summary>
         /// fileTree control.

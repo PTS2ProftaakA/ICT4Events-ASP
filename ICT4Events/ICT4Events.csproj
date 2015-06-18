@@ -43,6 +43,8 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\odp.net.managed.121.1.2\lib\net40\Oracle.ManagedDataAccess.dll</HintPath>
     </Reference>
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.DirectoryServices.AccountManagement" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -63,7 +65,9 @@
   <ItemGroup>
     <Content Include="Bestandsbeheer.aspx" />
     <Content Include="ClassDiagramICT4Events.cd" />
+    <Content Include="Inloggen.aspx" />
     <Content Include="packages.config" />
+    <Content Include="Main.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -74,9 +78,11 @@
   <ItemGroup>
     <Content Include="Global.asax" />
     <Content Include="TestForm.aspx" />
+    <Content Include="Uitloggen.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ActiveDirectory.cs" />
     <Compile Include="Bestandsbeheer.aspx.cs">
       <DependentUpon>Bestandsbeheer.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -89,6 +95,20 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Database\IDatabase.cs" />
+    <Compile Include="Inloggen.aspx.cs">
+      <DependentUpon>Inloggen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Inloggen.aspx.designer.cs">
+      <DependentUpon>Inloggen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main.Master.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main.Master.designer.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+    </Compile>
     <Compile Include="Models\Account.cs" />
     <Compile Include="Models\Account_Bijdrage.cs" />
     <Compile Include="Models\Bericht.cs" />
@@ -114,6 +134,13 @@
     </Compile>
     <Compile Include="TestForm.aspx.designer.cs">
       <DependentUpon>TestForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Uitloggen.aspx.cs">
+      <DependentUpon>Uitloggen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Uitloggen.aspx.designer.cs">
+      <DependentUpon>Uitloggen.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup />

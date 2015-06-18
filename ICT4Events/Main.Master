@@ -1,0 +1,15 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="ICT4Events.Main" %>
+<!DOCTYPE html>
+<html>
+    <head runat="server">
+        <title>ICT4Events</title>
+    </head>
+    <body>
+        <h1 style="text-align: right;"><a href="Uitloggen.aspx">Uitloggen</a></h1>
+        <form id="mainForm" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentGoesHere" runat="server"/>
+        </div>
+        </form>
+    </body>
+</html>

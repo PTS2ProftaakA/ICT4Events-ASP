@@ -5,7 +5,7 @@
         <title>Bestandsbeheer</title>
     </head>
     <body>
-        <form id="mainForm" method="post" enctype="multipart/form-data" runat="server">
+        <form id="formBestanden" method="post" enctype="multipart/form-data" runat="server">
         <div>
             <asp:TreeView ID="fileTree" CollapseImageToolTip="Inklappen" ExpandImageToolTip="Uitvouwen" ShowLines="True" runat="server">
                 <NodeStyle ForeColor="#000000" Font-Names="sans-serif" />
